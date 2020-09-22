@@ -1,0 +1,18 @@
+﻿
+
+<h1>Все автомобили</h1>
+<div class="row mt-5 mb-2">
+    @{
+        foreach (var car in Model.AllAutos)
+        {
+            <div class="col-lg-4">
+                <img class="img-thumbnail" src="@car.Image" alt="@car.Name"/>
+                <h2>Марка: @car.Name</h2>
+                <p>Номер: @car.Number</p>
+                <p>Цвет: @car.AutoColour</p>
+                <p>Год выпуска: @car.Year</p>
+            </div>
+        }
+    }
+</div>
+

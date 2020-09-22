@@ -1,0 +1,50 @@
+﻿@model Autos.Data.Models.Auto
+
+<div class="row">
+    <h3>Добавление нового автомобиля в базу</h3>
+    <form asp-action="AddAuto" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <div class="col-md-6">
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Desc"></label>
+            <div class="col-md-5">
+                <input asp-for="Desc" class="form-control" />
+                <span asp-validation-for="Desc" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Image"></label>
+            <div class="col-md-5">
+                <input asp-for="Image" class="form-control" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Number"></label>
+            <div class="col-md-5">
+                <input asp-for="Number" class="form-control" />
+                <span asp-validation-for="Number" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="AutoColour"></label>
+            <div class="col-md-5">
+                <input asp-for="AutoColour" class="form-control" />
+                <span asp-validation-for="AutoColour" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Year"></label>
+            <div class="col-md-5">
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+        </div>
+        <input class="btn btn-success" type="submit" value="Добавить авто"/>
+    </form>
+</div>
