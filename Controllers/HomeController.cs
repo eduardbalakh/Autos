@@ -20,6 +20,7 @@ namespace Autos.Controllers
         public ViewResult Index()
         {
             HomeViewModel obj = new HomeViewModel();
+            ViewBag.Title = "Главная страница";
             obj.allAutos = _autoRep.Autos;
             return View(obj);
         }
